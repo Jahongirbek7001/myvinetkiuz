@@ -92,30 +92,30 @@ export default function Home() {
   return (
     <React.Fragment>
       <div className=" w-full">
-        <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-20">
+        <div className=" w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-1 py-5 sm:p-5 md:p-10 lg:px-20">
 
           {data.map(i => {
             return (
-              <div className=" relative w-full p-4 my-5 shadow-md rounded-md bg-white/60" key={i.id}>
+              <div className=" relative w-[290px] sm:w-[340px]  lg:w-full p-4 my-5 shadow-md rounded-md bg-white/60 flex justify-center items-center flex-col mx-auto" key={i.id}>
                 <div
-                  className=" w-full h-[224px] overflow-hidden rounded-lg -mt-9 mb-2 shadow-lg flex justify-center items-center"
+                  className=" w-[260px] h-[150px] sm:h-[180px] sm:w-[310px] lg:h-[224px] lg:w-full overflow-hidden rounded-lg -mt-9 mb-2 shadow-lg flex justify-center items-center"
                 >
                   <Link href={`/${i.link}`}>
-                    <Image src={i.photo} alt="" className={` ${i.class} w-full photo hover:scale-125 object-cover`} />
+                    <Image src={i.photo} alt="" className={`  h-full hover:scale-125 object-contain`} />
                   </Link>
                 </div>
                 <div
-                  className=" space-y-3 card-content"
+                  className=" space-y-3 "
                 >
                   <span
-                    className=" cardName text-2xl font-semibold"
+                    className=" text-lg lg:text-2xl font-semibold"
                   >{i.name}</span>
                   <p className="description line-clamp-1">{i.description}</p>
                   <Link
                     href={`/${i.link}`}
                   >
                     <button
-                      className=" cardBtn flex justify-center items-center text-white font-serif font-semibold px-6 py-2 rounded-lg shadow-lg hover:scale-105 my-3 btn"
+                      className=" bg-[#e276aa] flex justify-center items-center text-white text-sm sm:text-xl font-serif font-semibold px-3 sm:px-6 py-1 sm:py-2 rounded-lg shadow-lg hover:scale-105 my-3 transition duration-[2000ms] mx-auto"
                     >Подробно
                     </button>
                   </Link>

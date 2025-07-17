@@ -136,7 +136,6 @@ header {
 
 .firstUnImgBg {
   width: 100%;
-  height: 630px;
   background-image: url(/media/univerAlbom/универ.jpg);
   background-position: 0 -45px;
   background-repeat: no-repeat;
@@ -599,19 +598,6 @@ header {
     height: 200px;
   }
 
-  .card-content span {
-    font-size: 20px;
-    margin: 0;
-  }
-
-  .card-content .description {
-    margin-top: 0;
-  }
-
-  .card-content button {
-    font-size: 18px;
-  }
-
   .section-photo .photo {
     transform: scale(1.15);
   }
@@ -665,7 +651,6 @@ header {
   .firstMlImg,
   .firstSadikImg {
     width: 100%;
-    height: 420px;
     background-position: -90px 0;
   }
 

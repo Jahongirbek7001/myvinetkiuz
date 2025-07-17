@@ -22,6 +22,7 @@ import sehriyoKids from "@/public/media/logotip/Sehriyokids.png"
 import ERUDIT from "@/public/media/logotip/ERUDIT.png"
 import littleTots from "@/public/media/logotip/littleTots.png"
 import Image from "next/image"
+import React from "react"
 
 
 
@@ -215,8 +216,8 @@ function Carousel() {
   ]
 
   return (
-    <>
-      <div className="slider w-4/5 px-10">
+    <React.Fragment>
+      <div className="slider w-4/5 px-10 mb-5">
         <div className="slider-track w-full">
           {
             logo.map(i => {
@@ -229,7 +230,7 @@ function Carousel() {
           }
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 
