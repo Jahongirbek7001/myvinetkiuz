@@ -1,26 +1,1597 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.App {
+  text-align: center;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-image {
+  background-image: url(/public/media/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 60%);
+}
+
+.photo {
+  transform: scale(1.1);
+  transition: 3s;
+}
+
+.bg-navbar {
+  background-color: rgba(255, 255, 255);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 60%);
+}
+
+.section-photo {
+  height: 224px;
+}
+
+.active {
+  border-bottom: 2px solid #6b7280;
+}
+
+.cardBtn {
+  background-color: #e276aa;
+}
+
+.cardBtn:hover {
+  background-color: #fff;
+  color: #6b7280;
+}
+
+.slider {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(150px * 44);
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-150px*22));
+  }
+}
+
+.slide {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.bgColor {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.firstUnImgBg {
+  width: 100%;
+  height: 630px;
+  background-image: url(/media/univerAlbom/универ.jpg);
+  background-position: 0 -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.firstStImg {
+  width: 100%;
+  height: 630px;
+  background-image: url(/media/schoolAlbom//старшая\ школа.jpg);
+  background-position: 0 -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.firstMlImg {
+  width: 100%;
+  height: 630px;
+  background-image: url(/media/schoolAlbom/младшая\ школа.jpg);
+  background-position: 0 -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.firstSadikImg {
+  width: 100%;
+  height: 630px;
+  background-image: url(/media/schoolAlbom/кидс.jpg);
+  background-position: 0 -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.firstARkImg {
+  width: 100%;
+  height: 630px;
+  background-image: url(/media/AR-TECHNOLOGY.jpg);
+  background-position: 0 -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.firstManImg {
+  width: 100%;
+  height: 830px;
+  background-image: url(/media/univerAlbom/bgMantiya.jpg);
+  background-position: 0 -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.secondimg {
+  display: none;
+}
+
+.firstimg:hover .secondimg {
+  display: block;
+  transform: translateY(-233.66px);
+  transition: 2s;
+}
+
+.bgLogo {
+  background-image: url(/media/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.object2 {
+  transform: scale(1.2) translateY(15px);
+}
+
+.object3 {
+  transform: translateY(10px) scale(1.1);
+}
+
+.btn {
+  transition: 2s;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-univer {
+  display: none;
+}
+
+.yandexMap {
+  overflow: hidden;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.videoSection {
+  width: 800px;
+  height: 555px;
+}
+
+@media (max-width: 1921px) {
+  .section-photo {
+    height: 300px;
+  }
+
+  .photoLenta {
+    transform: scale(1.5);
+  }
+
+  .photoProyekti {
+    transform: scale(1.35);
+  }
+
+  .cardName {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .thirdUnImg {
+    transform: translateX(15px) scale(1.1);
+  }
+
+  .stImg4 {
+    transform: translateY(-3px);
+  }
+
+  .IZARSTUDIO {
+    width: 100%;
+  }
+
+  .lentaTitle {
+    margin-top: 20px;
+  }
+
+  .lenta {
+    width: 100%;
+  }
+
+  .firstUnImg {
+    transform: scale(1.4) translateY(50px);
+  }
+
+  .fivethUnImg {
+    transform: scale(1);
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stImg1,
+  .stImg2,
+  .stImg3,
+  .stImg5 {
+    transform: translateY(-10px) scale(1.1);
+  }
+
+  .secondMlImg,
+  .thirdMlImg,
+  .fourthMlImg,
+  .fivethMlImg {
+    transform: scale(1);
+  }
+
+  .firstSadikImg1,
+  .secondSadikImg,
+  .thirdSadikImg,
+  .fourthSadikImg,
+  .fivethSadikImg {
+    transform: scale(1);
+  }
+  .firstManImg {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1537px) {
+  .section-photo {
+    height: 230px;
+  }
+
+  .photoLenta {
+    transform: scale(1.1);
+  }
+
+  .cardName {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .photoProyekti {
+    transform: scale(1.1);
+  }
+
+  .firstUnImg {
+    transform: scale(1.37) translateY(60px);
+  }
+
+  .stImg4,
+  .fivethUnImg {
+    transform: translateY(0px) scale(1.1);
+  }
+
+  .secondMlImg,
+  .thirdMlImg,
+  .fourthMlImg,
+  .fivethMlImg {
+    transform: scale(1.1);
+  }
+  .firstSadikImg1,
+  .secondSadikImg,
+  .thirdSadikImg,
+  .fourthSadikImg,
+  .fivethSadikImg {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1380px) {
+
+
+  .cardName {
+    font-size: 1.3rem;
+  }
+
+  .cardBtn {
+    width: 130px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .yandexMap {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1225px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cardName {
+    font-size: 1.5rem;
+  }
+
+  .section-photo {
+    width: 90%;
+    margin: 0 auto;
+    transform: translateY(-40px);
+  }
+
+  .section-photo .photo {
+    transform: scale(1.1);
+  }
+
+  .logo {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-photo .photo {
+    transform: scale(1.2);
+  }
+
+  .videoSection {
+    width: 700px;
+    height: 455px;
+  }
+
+  .videoText span {
+    font-size: 25px;
+  }
+
+  .skoro {
+    height: 500px;
+  }
+
+  .lentaTitle {
+    margin-top: 50px;
+  }
+
+  .desktop-univer .secondSection {
+    height: 450px;
+  }
+
+  .desktop-univer .secondSection .text,
+  .secondBgImg {
+    width: 50%;
+    height: 100%;
+  }
+
+  .desktop-univer .secondBgImg {
+    position: relative;
+  }
+
+  .desktop-univer .secondSection .text .text-left {
+    font-size: 17px;
+  }
+
+  .desktop-univer .secondSection .text .text-left span {
+    margin: 2px 0;
+  }
+
+  .desktop-univer .thirdUnImg {
+    transform: scale(1);
+  }
+
+  .firstUnImg {
+    transform: scale(1.5) translateY(35px);
+  }
+
+  .secondUnImg {
+    transform: scale(1.45) translateY(40px);
+  }
+
+  .fourthUnImg {
+    transform: scale(1.40) translateY(50px);
+  }
+
+  .fivethUnImg {
+    transform: scale(1.2) translateY(8px);
+  }
+
+  .sixthUnImg {
+    transform: scale(1.45) translateY(50px);
+  }
+
+  .seventhUnImg {
+    transform: scale(1.4) translateY(10px) translateX(15px);
+  }
+
+  .desktop-univer .secondSection button {
+    position: absolute;
+    bottom: -10px;
+  }
+
+  .BtnL {
+    transform: translatex(-300px);
+  }
+
+  .BtnR {
+    transform: translateX(130px);
+  }
+
+  .sixCard .img4 {
+    transform: scale(1.1);
+  }
+
+  .logoVinetki {
+    transform: translateY(15px);
+  }
+
+  .firstStImg {
+    background-position: -200px 0;
+  }
+
+  .bgColor .text {
+    transform: translateY(-50px);
+  }
+
+  .firstSadikImg {
+    background-position: -200px 0;
+  }
+
+  .lenta {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .maket {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .yandexMap {
+    margin-right: 10px;
+  }
+
+  .firstManImg {
+    background-position: -160px 0;
+  }
+
+  .firstUnImgBg {
+    background-position: -200px 0;
+  }
+
+  .firstMlImg {
+    background-position: -200px 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .bgColor .text span {
+    font-size: 18px;
+  }
+
+  .videoSection {
+    width: 600px;
+    height: 355px;
+  }
+
+  .videoText span {
+    font-size: 23px;
+  }
+
+  .bg-navbar {
+    position: relative;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .navbar1 {
+    position: absolute;
+    padding: 10px 0;
+    top: 100px;
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .aboutPhoto {
+    width: 400px;
+    height: 400px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 20px;
+  }
+
+  .card-container .card {
+    height: 380px;
+  }
+
+  .section-photo {
+    height: 200px;
+  }
+
+  .card-content span {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .card-content .description {
+    margin-top: 0;
+  }
+
+  .card-content button {
+    font-size: 18px;
+  }
+
+  .section-photo .photo {
+    transform: scale(1.15);
+  }
+
+  .footer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .card-container .photo {
+    transform: scale(1.25);
+  }
+
+  .secondBgImg {
+    width: 660px;
+    height: 665px;
+    overflow: hidden;
+    overflow: hidden;
+  }
+
+  .univerFText {
+    width: 660px;
+    height: 450px;
+  }
+
+  .bgLogo {
+    width: 100%;
+  }
+
+  .yandexMap {
+    width: 320px;
+  }
+
+  .yandexMap .map {
+    width: 100%;
+  }
+
+  .firstUnImg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+  }
+
+  .firstUnImgBg,
+  .firstStImg,
+  .firstMlImg,
+  .firstSadikImg {
+    width: 100%;
+    height: 420px;
+    background-position: -90px 0;
+  }
+
+  .firstARkImg,
+  .firstManImg {
+    width: 100%;
+    height: 450px;
+    background-position: 0;
+  }
+
+  .firstMlImg .text span {
+    font-size: 16px;
+  }
+
+  .secondSection {
+    width: 100%;
+    height: 450px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .secondSection .text,
+  .secondBgImg {
+    width: 50%;
+    height: 450px;
+  }
+
+  .secondSection .text span {
+    font-size: 14px;
+  }
+
+  .firstUnImg {
+    transform: scale(1.9) translateY(52px);
+  }
+
+  .secondUnImg {
+    transform: scale(1.9) translateY(50px);
+  }
+
+  .secondBgImg .thirdUnImg {
+    transform: scale(1.4) translateY(40px);
+  }
+
+  .secondBgImg .fourthUnImg {
+    transform: scale(2) translateY(50px);
+  }
+
+  .secondBgImg .fivethUnImg {
+    transform: scale(1.5) translateY(40px);
+  }
+
+  .secondBgImg .sixthUnImg {
+    transform: scale(1.9) translateY(60px);
+  }
+
+  .sixCard {
+    padding: 20px;
+  }
+
+  .desktop-univer {
+    padding: 20px 0;
+  }
+
+  .BtnL {
+    transform: translateX(-280px);
+  }
+
+  .BtnR {
+    transform: translateX(95px);
+  }
+
+  .stImg1,
+  .stImg2,
+  .stImg3,
+  .stImg4,
+  .stImg5 {
+    transform: scale(1.4) translateY(30px);
+  }
+
+  .firstMlImg1,
+  .fourthSadikImg {
+    transform: scale(1.3) translateY(35px);
+  }
+
+  .secondMlImg,
+  .thirdMlImg,
+  .fourthMlImg,
+  .fivethMlImg {
+    transform: scale(1.3) translateY(35px);
+  }
+
+  .firstSadikImg1,
+  .secondSadikImg,
+  .thirdSadikImg,
+  .fivethSadikImg {
+    transform: scale(1.4) translateY(30px);
+  }
+
+  .lenta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .maket,
+  .falga {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .maketSection .overflow-hidden {
+    padding: 0 100px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .navbar1 {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 10px 100px;
+  }
+}
+
+@media (max-width: 426px) {
+
+  .card-container,
+  .lenta {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .videoNewSeason {
+    width: 426pxv;
+  }
+
+  .videoSection {
+    width: 350px;
+    height: 255px;
+  }
+
+  .videoText span {
+    font-size: 18px;
+  }
+
+  .aboutPhoto {
+    width: 300px;
+    height: 300px;
+  }
+
+  .aboutText {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .skoro {
+    font-size: 45px;
+  }
+
+  .mobile-menu {
+    margin-right: 25px;
+  }
+
+  .logoVinetki {
+    margin-left: 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .desktop-univer {
+    display: none;
+  }
+
+  .mobile-univer {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card-container button {
+    margin: 30px auto;
+    font-size: 16px;
+  }
+
+
+  .firstUnImg {
+    width: 100%;
+  }
+
+  .secondBgImg {
+    width: 100%;
+  }
+
+  .albom-univer .univerFText {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .albom-univer .univerFText span {
+    font-size: 16px;
+  }
+
+  .albom-univer .seventhUnImg {
+    transform: scale(1.3) translateX(15px) translateY(30px);
+  }
+
+  .secondBgImg {
+    height: 400px;
+  }
+
+  .firstUnImgBg,
+  .firstStImg,
+  .firstSadikImg,
+  .firstMlImg,
+  .firstManImg,
+  .firstARkImg {
+    height: 270px;
+  }
+
+  .bgColor .text {
+    padding: 20px;
+    transform: translate(0);
+  }
+
+  .bgColor .text span {
+    font-size: 14px;
+  }
+
+  .firstUnImg,
+  .secondUnImg {
+    transform: scale(1.6) translateY(40px);
+  }
+
+
+  .secondBgImg .thirdUnImg {
+    transform: scale(1.2) translateY(20px);
+  }
+
+  .secondBgImg .fourthUnImg {
+    transform: scale(1.6) translateY(40px);
+  }
+
+  .secondBgImg .fivethUnImg {
+    transform: scale(1.25) translateY(20px);
+  }
+
+  .secondBgImg .sixthUnImg {
+    transform: scale(1.61) translateY(40px);
+  }
+
+  .stImg1,
+  .stImg2,
+  .stImg3,
+  .stImg4,
+  .stImg5 {
+    transform: scale(1.25) translateY(20px);
+  }
+
+  .firstSadikImg1 {
+    transform: scale(1.4) translateY(20px);
+  }
+
+  .secondSadikImg,
+  .thirdSadikImg,
+  .fivethSadikImg {
+    transform: scale(1.3) translateY(30px);
+  }
+
+  .firstMlImg1,
+  .fourthSadikImg {
+    transform: scale(1.35) translateY(38px);
+  }
+
+  .secondMlImg,
+  .thirdMlImg,
+  .fourthMlImg,
+  .fivethMlImg {
+    transform: scale(1.35) translateY(35px);
+  }
+
+  .sixCard {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+  .videoSection,
+  .videoContainer {
+    padding: 30px;
+  }
+
+  .studioTitle span:first-child {
+    font-size: 25px;
+  }
+
+  .studioTitle span:last-child {
+    font-size: 45px;
+  }
+
+  .maketSection .overflow-hidden {
+    padding: 0;
+  }
+
+  .videoTitle {
+    font-size: 25px;
+    padding: 0 30px;
+  }
+
+  .slide {
+    width: 100px;
+    height: 100px;
+  }
+
+  .albom-univer .univerFText {
+    transform: translateY(-5px);
+  }
+
+  .albom-univer:first-child .univerFText {
+    transform: translateY(0px);
+  }
+
+  .firstMlImg .bgColor .text {
+    height: 270px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    transform: translateY(-30px);
+  }
+
+  .studioTitle {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 391px) {
+  .layout {
+    max-width: 100%;
+  }
+
+  .videoNewSeason {
+    width: 375px;
+  }
+
+  .videoNewSeason section:last-child {
+    margin-top: 0;
+  }
+
+  .videoSection {
+    width: 350px;
+    height: 255px;
+  }
+
+  .videoText span {
+    font-size: 18px;
+  }
+
+  .hamburger-react {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-menu {
+    margin-right: 15px;
+  }
+
+  .navbar1 {
+    top: 80px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    width: 390px;
+    height: 130px;
+  }
+
+  .slide {
+    width: 80px;
+  }
+
+  .est2015logo {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yandexMap {
+    width: 300px;
+    height: auto;
+  }
+
+
+  .secondBgImg {
+    width: 310px;
+    height: 325px;
+    overflow: hidden;
+  }
+
+  .univerFText {
+    width: 350px;
+    height: 450px;
+  }
+
+  .bgLogo {
+    width: 390px;
+  }
+
+  .firstUnImgBg {
+    width: 390px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .firstUnImgBg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+  }
+
+  .sixCard {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 20px;
+  }
+
+  .sixCard .img4 {
+    transform: translateY(-10px) scale(1.15);
+  }
+
+  .firstStImg {
+    width: 390px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .firstStImg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+  }
+
+  .firstMlImg {
+    width: 390px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .firstMlImg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+  }
+
+  .firstSadikImg {
+    width: 390px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .firstSadikImg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+  }
+
+  .firstARkImg {
+    width: 390px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .firstARkImg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+  }
+
+  .firstManImg {
+    width: 390px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .firstManImg .text {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 30px;
+  }
+
+  .bgLogo {
+    width: 390px;
+  }
+
+  .bg-image {
+    width: 390px;
+  }
+
+  .videoSection {
+    padding: 50px 30px;
+  }
+
+  .lenta,
+  .falga,
+  .maket {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .imgSection {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .falga img {
+    width: 200px;
+    height: 200px;
+    /* transform: translateX(50px); */
+  }
+
+  .lentaTitle {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .folgaTitle {
+    font-size: 25px;
+  }
+
+  .maketSectionTitle span:first-child {
+    font-size: 25px;
+  }
+
+  .maketSectionTitle span:last-child {
+    font-size: 15px;
+  }
+
+  .maketSection {
+    width: 100%;
+    padding: 0;
+  }
+
+  .maketSection img {
+    width: 300px;
+  }
+
+  .maketText {
+    font-size: 18px;
+  }
+
+  .maketTitle {
+    font-size: 25px;
+  }
+
+  .studioTitle span:first-child {
+    font-size: 24px;
+  }
+
+  .studioTitle span:last-child {
+    font-size: 30px;
+  }
+
+  .videoContainer {
+    padding: 20px;
+  }
+
+  .videoTitle {
+    font-size: 20px;
+  }
+
+  .aboutText {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .aboutPhoto img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 376px) {
+  .secondBgImg {
+    width: 295.2px;
+    height: 325px;
+    overflow: hidden;
+  }
+
+  .firstUnImgBg .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container button {
+    margin: 25px auto;
+    font-size: 16px;
+  }
+
+  .bg-navbar {
+    height: 80px;
+  }
+
+  .logoVinetki {
+    transform: translateY(8px);
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mobile-menu {
+    width: 40px;
+    height: 37px;
+    transform: translateY(-5px);
+  }
+
+  .линия {
+    width: 100%;
+  }
+
+  .univerFText span {
+    font-size: 15px;
+  }
+
+  .bgLogo {
+    width: 375px;
+  }
+
+  .mobile-univer {
+    width: 375px;
+    margin: 0;
+  }
+
+  .bg-image {
+    width: 375px;
+  }
+
+  .slider {
+    width: 375px;
+  }
+
+  .firstUnImgBg,
+  .firstStImg,
+  .firstMlImg,
+  .firstSadikImg,
+  .firstManImg {
+    width: 375px;
+  }
+
+  .firstMlImg .bgColor .text {
+    padding: 0;
+    transform: translateY(-40px);
+  }
+
+  .sixCard {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 361px) {
+  .yandexMap {
+    transform: translateY(70px);
+  }
+
+  .firstUnImgBg,
+  .firstStImg,
+  .firstMlImg,
+  .firstSadikImg,
+  .firstARkImg,
+  .firstManImg {
+    width: 360px;
+  }
+
+  .navbar1,
+  .navbar {
+    margin: 0;
+  }
+
+  .mobile-univer {
+    width: 100%;
+  }
+
+  .videoNewSeason {
+    width: 100%;
+  }
+
+  .bgLogo {
+    width: 100%;
+  }
+
+  .section-photo .photo {
+    transform: scale(1.35);
+  }
+
+  .secondBgImg {
+    width: 280px;
+  }
+  .slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .mobile-univer {
+    width: 100%;
+  }
+
+  .videoNewSeason {
+    width: 301px;
+  }
+
+  .videoSection {
+    width: 300px;
+    height: 255px;
+  }
+
+  .videoText {
+    margin: 0;
+  }
+
+  .videoText span {
+    font-size: 18px;
+  }
+
+  .firstUnImgBg,
+  .firstStImg,
+  .firstMlImg,
+  .firstSadikImg {
+    width: 100%;
+    height: 260px;
+    background-position: -130px 0;
+  }
+
+  .firstARkImg {
+    width: 100%;
+    height: 260px;
+  }
+
+  .firstManImg {
+    width: 100%;
+    height: 260px;
+    background-position: -50px 0;
+  }
+
+  .bgLogo {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 0 10px;
+  }
+
+  .firstUnImgBg,
+  .firstStImg,
+  .firstMlImg,
+  .firstSadikImg,
+  .firstARkImg .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .videoSection {
+    padding: 40px 10px;
+  }
+
+  .firstMlImg .bgColor .text span {
+    font-size: 12px;
+  }
+
+  .albom-univer {
+    width: 280px;
+    padding: 10px;
+  }
+
+  .izarContainer {
+    padding: 20px;
+  }
+
+  .albom-univer .secondBgImg {
+    width: 100%;
+  }
+
+  .studioTitle span:first-child {
+    font-size: 18px;
+  }
+
+  .studioTitle span:last-child {
+    font-size: 27px;
+  }
+
+  .albom-univer .univerFText {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .albom-univer .univerFText span {
+    font-size: 14px;
+  }
+
+
+  .firstUnImgBg {
+    width: 100%;
+  }
+
+  .firstUnImg,
+  .secondUnImg {
+    transform: scale(1.85) translateY(40px);
+  }
+
+  .secondBgImg .thirdUnImg {
+    transform: scale(1.4) translateY(30px);
+  }
+
+  .secondBgImg .fourthUnImg {
+    transform: scale(1.85) translateY(40px);
+  }
+
+  .secondBgImg .fivethUnImg {
+    transform: scale(1.45) translateY(35px);
+  }
+
+  .secondBgImg .sixthUnImg {
+    transform: scale(1.75) translateY(35px);
+  }
+
+  .secondBgImg .seventhUnImg {
+    transform: scale(1.45) translate(10px, 35px);
+  }
+
+  .yandexMap {
+    width: 270px;
+    height: 200px;
+    margin: 0;
+  }
+
+  .map {
+    width: 270px;
+    height: 200px;
+  }
+
+  .stImg1,
+  .stImg2,
+  .stImg3,
+  .stImg4,
+  .stImg5 {
+    transform: scale(1.5) translateY(25px);
+  }
+
+  .firstMlImg1,
+  .fourthSadikImg {
+    transform: scale(1.35) translateY(30px);
+  }
+
+  .secondMlImg,
+  .thirdMlImg,
+  .fourthMlImg,
+  .fivethMlImg {
+    transform: scale(1.35) translateY(30px);
+  }
+
+  .univerFText button {
+    font-size: 14px;
+  }
+
+  .secondSadikImg,
+  .thirdSadikImg,
+  .fivethSadikImg {
+    transform: scale(1.32) translateY(30px);
+  }
+
+  .maket {
+    padding: 20px;
+  }
+
+  .section-photo {
+    height: 170px;
+  }
+
+  .section-photo .photo {
+    transform: scale(1.35) translateY(0px);
+  }
+
+  .card-container .relative {
+    height: 320px;
+  }
+
+  .card-container button {
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+  .slider {
+    width: 100%;
+  }
 }
