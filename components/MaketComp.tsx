@@ -170,7 +170,7 @@ function MaketComp() {
         <div className="maket grid grid-cols-3 gap-5">
           {maketData.map(i => {
             return (
-              <div className=" maketSection p-10 space-y-5">
+              <div className=" maketSection p-10 space-y-5" key={i.id}>
                 <section className=" overflow-hidden w-full h-[270px] mx-auto my-0 flex justify-center items-center">
                   <Image src={i.photo} className=" w-full" alt="" />
                 </section>

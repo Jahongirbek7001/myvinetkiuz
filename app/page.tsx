@@ -84,7 +84,7 @@ export default function Home() {
       name: "Проекты с партнёрами",
       photo: proyekti,
       description: "Незабываемые торжественные церемонии ",
-      link: "vipuskniy",
+      link: "proyekti",
       class: "photoProyekti"
     }
   ]
@@ -101,7 +101,7 @@ export default function Home() {
                   className=" w-[260px] h-[150px] sm:h-[180px] sm:w-[310px] lg:h-[224px] lg:w-full overflow-hidden rounded-lg -mt-9 mb-2 shadow-lg flex justify-center items-center"
                 >
                   <Link href={`/${i.link}`}>
-                    <Image src={i.photo} alt="" className={`  h-full hover:scale-125 object-contain`} />
+                    <Image src={i.photo} alt="" className={`  h-full hover:scale-125 transition duration-1000 ease-in-out object-cover`} />
                   </Link>
                 </div>
                 <div

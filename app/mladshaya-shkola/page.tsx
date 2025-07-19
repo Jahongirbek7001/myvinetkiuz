@@ -24,9 +24,9 @@ const MladshayaShkola = () => {
     <React.Fragment>
       <div className=" max-w-full bgLogo">
         <div className=" w-full">
-          <div className="firstMlImg h-[300px] md:h-[700px]">
+          <div className="firstMlImg h-[400px] md:h-[700px]">
             <div className="bgColor flex justify-center items-center">
-              <p className="text-center text-zinc-300 text-xl lg:text-6xl">
+              <p className="text-center text-zinc-300 text-[16px] lg:text-5xl">
                 Прощание с начальной школой и переход в старшие классы достаточно важный этап в жизни каждого ученика. Мы предлагаем сохранить память об одноклассниках в одном альбоме. Фотоальбомы  выпускника для 1-4 класса представлены в различном ценовом диапазоне и множестве дизайнов. Каждый сможет найти то, что подходит именно ему. Наши фотографы сделают яркие, живые и эмоциональные фотографии и мы поместим их в альбом, который будет радовать вас всю жизнь. Ниже представлены выпускные альбомы 1-4 класс, которые Вы можете пролистать и заказать у нас.
               </p>
             </div>

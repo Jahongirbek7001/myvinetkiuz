@@ -28,9 +28,9 @@ const Universitet = () => {
     <React.Fragment>
       <div className=" max-w-full bgLogo">
         <div className=" w-full">
-          <div className="firstUnImgBg h-[300px] md:h-[700px]">
+          <div className="firstUnImgBg h-[400px] md:h-[700px]">
             <div className="bgColor flex justify-center items-center">
-              <p className="text-center text-zinc-300 text-xl lg:text-6xl">
+              <p className="text-center text-zinc-300 text-[16px] lg:text-5xl">
                 Со студенческим выпускным альбомом можно по желанию в любой момент окунуться в волну теплых воспоминаний о годах, проведенных в любимом университете. Поэтому вопроса заказать фотоальбом для студентов либо нет не должно стоять в принципе.
               </p>
             </div>

@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className=" flex flex-col min-h-screen">
           <Header />
           <div className="flex-1">
-            <div className="max-w-8xl mx-auto mb-5 flex justify-center items-center">{children}</div>
+            <div className="max-w-8xl mx-auto flex justify-center items-center">{children}</div>
           </div>
           <Footer />
         </div>

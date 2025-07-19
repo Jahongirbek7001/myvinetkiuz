@@ -94,7 +94,7 @@ header {
 .slider-track {
   display: flex;
   width: calc(150px * 44);
-  animation: scroll 30s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
@@ -135,62 +135,45 @@ header {
 }
 
 .firstUnImgBg {
-  width: 100%;
   background-image: url(/media/univerAlbom/универ.jpg);
-  background-position: 0 -45px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0;
 }
 
 .firstStImg {
-  width: 100%;
-  height: 630px;
   background-image: url(/media/schoolAlbom//старшая\ школа.jpg);
-  background-position: 0 -45px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0;
 }
 
 .firstMlImg {
-  width: 100%;
-  height: 630px;
   background-image: url(/media/schoolAlbom/младшая\ школа.jpg);
-  background-position: 0 -45px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0;
 }
 
 .firstSadikImg {
-  width: 100%;
-  height: 630px;
   background-image: url(/media/schoolAlbom/кидс.jpg);
-  background-position: 0 -45px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0;
 }
 
 .firstARkImg {
-  width: 100%;
-  height: 630px;
   background-image: url(/media/AR-TECHNOLOGY.jpg);
-  background-position: 0 -45px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0;
 }
 
 .firstManImg {
-  width: 100%;
-  height: 830px;
   background-image: url(/media/univerAlbom/bgMantiya.jpg);
-  background-position: 0 -45px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0;
 }
 
 .secondimg {
@@ -311,14 +294,6 @@ header {
   .fivethMlImg {
     transform: scale(1);
   }
-
-  .firstSadikImg1,
-  .secondSadikImg,
-  .thirdSadikImg,
-  .fourthSadikImg,
-  .fivethSadikImg {
-    transform: scale(1);
-  }
   .firstManImg {
     height: 1000px;
   }
@@ -358,13 +333,6 @@ header {
   .thirdMlImg,
   .fourthMlImg,
   .fivethMlImg {
-    transform: scale(1.1);
-  }
-  .firstSadikImg1,
-  .secondSadikImg,
-  .thirdSadikImg,
-  .fourthSadikImg,
-  .fivethSadikImg {
     transform: scale(1.1);
   }
 }
@@ -506,16 +474,9 @@ header {
     transform: translateY(15px);
   }
 
-  .firstStImg {
-    background-position: -200px 0;
-  }
 
   .bgColor .text {
     transform: translateY(-50px);
-  }
-
-  .firstSadikImg {
-    background-position: -200px 0;
   }
 
   .lenta {
@@ -530,18 +491,6 @@ header {
 
   .yandexMap {
     margin-right: 10px;
-  }
-
-  .firstManImg {
-    background-position: -160px 0;
-  }
-
-  .firstUnImgBg {
-    background-position: -200px 0;
-  }
-
-  .firstMlImg {
-    background-position: -200px 0;
   }
 }
 
@@ -646,25 +595,6 @@ header {
     padding: 30px 0;
   }
 
-  .firstUnImgBg,
-  .firstStImg,
-  .firstMlImg,
-  .firstSadikImg {
-    width: 100%;
-    background-position: -90px 0;
-  }
-
-  .firstARkImg,
-  .firstManImg {
-    width: 100%;
-    height: 450px;
-    background-position: 0;
-  }
-
-  .firstMlImg .text span {
-    font-size: 16px;
-  }
-
   .secondSection {
     width: 100%;
     height: 450px;
@@ -742,13 +672,6 @@ header {
     transform: scale(1.3) translateY(35px);
   }
 
-  .firstSadikImg1,
-  .secondSadikImg,
-  .thirdSadikImg,
-  .fivethSadikImg {
-    transform: scale(1.4) translateY(30px);
-  }
-
   .lenta {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -770,7 +693,6 @@ header {
   .navbar1 {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding: 10px 100px;
   }
 }
 
@@ -798,12 +720,6 @@ header {
   .aboutPhoto {
     width: 300px;
     height: 300px;
-  }
-
-  .aboutText {
-    padding: 20px;
-    font-size: 18px;
-    text-align: center;
   }
 
   .skoro {
@@ -864,15 +780,6 @@ header {
     height: 400px;
   }
 
-  .firstUnImgBg,
-  .firstStImg,
-  .firstSadikImg,
-  .firstMlImg,
-  .firstManImg,
-  .firstARkImg {
-    height: 270px;
-  }
-
   .bgColor .text {
     padding: 20px;
     transform: translate(0);
@@ -910,10 +817,6 @@ header {
   .stImg4,
   .stImg5 {
     transform: scale(1.25) translateY(20px);
-  }
-
-  .firstSadikImg1 {
-    transform: scale(1.4) translateY(20px);
   }
 
   .secondSadikImg,
@@ -973,14 +876,6 @@ header {
 
   .albom-univer:first-child .univerFText {
     transform: translateY(0px);
-  }
-
-  .firstMlImg .bgColor .text {
-    height: 270px;
-    width: 100%;
-    padding: 0 10px;
-    font-size: 15px;
-    transform: translateY(-30px);
   }
 
   .studioTitle {
@@ -1070,21 +965,6 @@ header {
     width: 390px;
   }
 
-  .firstUnImgBg {
-    width: 390px;
-    height: 300px;
-    background-position: center;
-  }
-
-  .firstUnImgBg .text {
-    width: 100%;
-    height: 300px;
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-    padding: 30px 0;
-  }
-
   .sixCard {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1093,66 +973,6 @@ header {
 
   .sixCard .img4 {
     transform: translateY(-10px) scale(1.15);
-  }
-
-  .firstStImg {
-    width: 390px;
-    height: 300px;
-    background-position: center;
-  }
-
-  .firstStImg .text {
-    width: 100%;
-    height: 300px;
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-    padding: 30px 0;
-  }
-
-  .firstMlImg {
-    width: 390px;
-    height: 300px;
-    background-position: center;
-  }
-
-  .firstMlImg .text {
-    width: 100%;
-    height: 300px;
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-    padding: 30px 0;
-  }
-
-  .firstSadikImg {
-    width: 390px;
-    height: 300px;
-    background-position: center;
-  }
-
-  .firstSadikImg .text {
-    width: 100%;
-    height: 300px;
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-    padding: 30px 0;
-  }
-
-  .firstARkImg {
-    width: 390px;
-    height: 300px;
-    background-position: center;
-  }
-
-  .firstARkImg .text {
-    width: 100%;
-    height: 300px;
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-    padding: 30px 0;
   }
 
   .firstManImg {
@@ -1252,11 +1072,6 @@ header {
     font-size: 20px;
   }
 
-  .aboutText {
-    padding: 0 10px;
-    text-align: center;
-  }
-
   .aboutPhoto img {
     width: 80%;
   }
@@ -1267,12 +1082,6 @@ header {
     width: 295.2px;
     height: 325px;
     overflow: hidden;
-  }
-
-  .firstUnImgBg .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .card-container button {
@@ -1287,7 +1096,7 @@ header {
   .logoVinetki {
     transform: translateY(8px);
   }
-
+ 
   .logo {
     width: 80px;
     height: 80px;
@@ -1324,19 +1133,6 @@ header {
     width: 375px;
   }
 
-  .firstUnImgBg,
-  .firstStImg,
-  .firstMlImg,
-  .firstSadikImg,
-  .firstManImg {
-    width: 375px;
-  }
-
-  .firstMlImg .bgColor .text {
-    padding: 0;
-    transform: translateY(-40px);
-  }
-
   .sixCard {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1346,15 +1142,6 @@ header {
 @media (max-width: 361px) {
   .yandexMap {
     transform: translateY(70px);
-  }
-
-  .firstUnImgBg,
-  .firstStImg,
-  .firstMlImg,
-  .firstSadikImg,
-  .firstARkImg,
-  .firstManImg {
-    width: 360px;
   }
 
   .navbar1,
@@ -1408,20 +1195,6 @@ header {
     font-size: 18px;
   }
 
-  .firstUnImgBg,
-  .firstStImg,
-  .firstMlImg,
-  .firstSadikImg {
-    width: 100%;
-    height: 260px;
-    background-position: -130px 0;
-  }
-
-  .firstARkImg {
-    width: 100%;
-    height: 260px;
-  }
-
   .firstManImg {
     width: 100%;
     height: 260px;
@@ -1436,22 +1209,8 @@ header {
     padding: 0 10px;
   }
 
-  .firstUnImgBg,
-  .firstStImg,
-  .firstMlImg,
-  .firstSadikImg,
-  .firstARkImg .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .videoSection {
     padding: 40px 10px;
-  }
-
-  .firstMlImg .bgColor .text span {
-    font-size: 12px;
   }
 
   .albom-univer {
@@ -1482,11 +1241,6 @@ header {
 
   .albom-univer .univerFText span {
     font-size: 14px;
-  }
-
-
-  .firstUnImgBg {
-    width: 100%;
   }
 
   .firstUnImg,

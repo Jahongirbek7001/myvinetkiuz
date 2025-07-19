@@ -22,9 +22,9 @@ const StarshayaShkola = () => {
     <React.Fragment>
       <div className=" max-w-full bgLogo">
         <div className=" w-full">
-          <div className="firstStImg h-[300px] md:h-[700px]">
+          <div className="firstStImg h-[400px] md:h-[700px]">
             <div className="bgColor flex justify-center items-center">
-              <p className="text-center text-zinc-300 text-xl lg:text-6xl">
+              <p className="text-center text-zinc-300 text-[16px] lg:text-5xl">
                 Альбом для выпускного класса уже стал традицией. Сегодня выпускные фотоальбомы для школьников в нашем исполнении представляют собой целое произведение искусства, на страницах которого ярко и красочно представлены выпускники, их преподаватели, важные события школьных лет.
               </p>
             </div>

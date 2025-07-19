@@ -6,13 +6,11 @@ const ARTECHNOLOGY = () => {
   return (
     <div className="max-w-full bgLogo">
       <div className=" w-full">
-        <div className="firstARkImg">
-          <div className="bgColor">
-            <div className="text p-20 text-center" >
-              <span className="text-center text-zinc-300">
-                Вы можете создать больше воспоминаний. Когда через несколько лет вы посмотрите на эти виньетки, видео помогут вам вспомнить все детали этих съёмок, детали ваших школьных годов, и всех ваших одноклассников
-              </span>
-            </div>
+        <div className="firstARkImg h-[400px] md:h-[700px]">
+          <div className="bgColor flex justify-center items-center">
+            <p className="text-center text-zinc-300 text-[16px] lg:text-5xl">
+              Вы можете создать больше воспоминаний. Когда через несколько лет вы посмотрите на эти виньетки, видео помогут вам вспомнить все детали этих съёмок, детали ваших школьных годов, и всех ваших одноклассников
+            </p>
           </div>
         </div>
       </div>

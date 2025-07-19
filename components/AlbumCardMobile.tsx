@@ -20,8 +20,8 @@ interface AlbumCardMobileProps {
 
 export default function AlbumCardMobile({ album }: AlbumCardMobileProps) {
   return (
-    <div className="w-full px-1 flex justify-center items-center flex-col h-[800px]" key={album.id}>
-      <div className="relative h-1/2 rounded-t-md overflow-hidden">
+    <div className="w-full px-1 flex justify-center items-center flex-col h-[700px]" key={album.id}>
+      <div className="w-full relative h-1/2 rounded-t-md overflow-hidden">
         <Image
           src={album.image}
           alt=""
@@ -37,8 +37,8 @@ export default function AlbumCardMobile({ album }: AlbumCardMobileProps) {
         </div>
       </div>
 
-      <div className="text p-5 bg-black opacity-40 text-white h-1/2 rounded-b-md">
-        <div className="grid grid-cols-1 text-left text-sm md:text-2xl space-y-5">
+      <div className="w-full text p-5 bg-black opacity-40 text-white h-1/2 rounded-b-md">
+        <div className="flex justify-center flex-col gap-2 text-left text-sm md:text-2xl space-y-1">
           <span>{album.type}</span>
           <span>{album.page}</span>
           <span>{album.cover}</span>

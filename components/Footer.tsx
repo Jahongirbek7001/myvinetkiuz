@@ -10,30 +10,30 @@ import Link from "next/link";
 
 function Footer() {
   return (<>
-    <div className=" footer flex justify-between p-2 items-center border-solid bg-navbar font-semibold">
-      <div className="h-auto ml-4">
+    <div className=" bg-white flex justify-center flex-col md:flex-row md:justify-between p-2 items-center border-solid font-semibold">
+      <div className="h-auto m-0 md:ml-4">
         <div>
-          <ul className=" space-y-3 relative text-left mb-4 ml-4">
-            <li className="flex justify-start items-center">
+          <ul className=" space-y-3 relative my-4 md:ml-4">
+            <li className="flex justify-center md:justify-start items-center">
               <span className="w-[20px] h-[22px]">
                 <Image src={phoneLogo} alt="" />
               </span>
               <span>+998 (95) 199-7-199</span>
             </li>
-            <li className="flex justify-start items-center">
+            <li className="flex justify-center md:justify-start items-center">
               <span className="w-[20px] h-[22px]">
                 <Image src={phoneLogo} alt="" />
               </span>
               <span>+998 (93) 518-76-65</span>
             </li>
-            <li className="flex justify-start items-center">
+            <li className="flex justify-center md:justify-start items-center">
               <span className="w-[20px] h-[22px]">
                 <Image src={phoneLogo} alt="" />
               </span>
               <span>+998 (99) 515-87-66
               </span>
             </li>
-            <li className="flex justify-start items-center space-x-1">
+            <li className="flex justify-center md:justify-start items-center space-x-1">
               <span className="w-[25px] h-[25px]">
                 <Image src="https://img.icons8.com/ios/50/000000/domain.png" alt="" width={25} height={25} />
               </span>
@@ -44,7 +44,7 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <ul className=" flex justify-start items-center gap-2 ml-3">
+          <ul className=" flex justify-center md:justify-start items-center gap-2 my-4 md:ml-4">
             <li className="">
               <Link href="https://t.me/Vinetkiuz1" target="_blank">
                 <Image src="https://img.icons8.com/ios-filled/50/000000/telegram.png" width={40} height={40} alt="" />

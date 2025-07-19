@@ -25,7 +25,7 @@ export default function AlbumCard({ item }: AlbumCardProps) {
             {isEven ? (
                 <>
                     {/* Left: Text */}
-                    <div className="text p-10 bg-black opacity-40 text-white w-[700px] h-[600px] rounded-r-md">
+                    <div className="text p-10 bg-black opacity-40 text-white w-[700px] h-[600px] rounded-l-md">
                         <div className="grid grid-cols-1 text-left text-2xl space-y-5">
                             <span>{item.type}</span>
                             <span>{item.page}</span>
@@ -38,7 +38,7 @@ export default function AlbumCard({ item }: AlbumCardProps) {
                     </div>
 
                     {/* Right: Image */}
-                    <div className="relative w-[700px] h-[600px] rounded-l-md overflow-hidden">
+                    <div className="relative w-[700px] h-[600px] rounded-r-md overflow-hidden">
                         <Image
                             src={item.image}
                             alt=""

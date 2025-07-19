@@ -164,7 +164,7 @@ function LentaComp() {
           <div className=" lenta grid grid-cols-4 gap-5">
             {lentaData.map(i => {
               return (
-                <div className=" p-10 space-y-3">
+                <div className=" p-10 space-y-3" key={i.id}>
                   <section className=" overflow-hidden">
                     <Image src={i.photo} className=" w-[200px] h-[200px]" alt="" />
                   </section>

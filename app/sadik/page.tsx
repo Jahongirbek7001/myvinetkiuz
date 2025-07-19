@@ -23,9 +23,9 @@ const Sadik = () => {
     <React.Fragment>
       <div className=" max-w-full bgLogo">
         <div className=" w-full">
-          <div className="firstSadikImg h-[300px] md:h-[700px]">
+          <div className="firstSadikImg h-[400px] md:h-[700px]">
             <div className="bgColor flex justify-center items-center">
-              <p className="text-center text-zinc-300 text-xl lg:text-6xl">
+              <p className="text-center text-zinc-300 text-[16px] lg:text-5xl">
                 Сегодня они такие милые и хорошенькие… И так хочется запомнить, какими они были! Да и им самим выпускные альбомы для детского сада когда-нибудь помогут вспомнить это беззаботное время, своих когдатошних друзей, улыбнуться, вернуть светлое и беззаботное настроение)
               </p>
             </div>
