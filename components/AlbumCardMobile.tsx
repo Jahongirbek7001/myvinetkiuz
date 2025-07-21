@@ -25,7 +25,7 @@ export default function AlbumCardMobile({ album }: AlbumCardMobileProps) {
         <Image
           src={album.image}
           alt=""
-          className="object-center object-cover w-full h-full scale-150 translate-y-20"
+          className="object-center object-cover h-full"
         />
 
         <div className="w-full absolute bottom-5 flex justify-center items-center gap-5">

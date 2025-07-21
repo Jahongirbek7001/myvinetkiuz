@@ -105,7 +105,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div
-                  className=" space-y-3 "
+                  className=" w-full flex justify-center items-start flex-col"
                 >
                   <span
                     className=" text-lg lg:text-2xl font-semibold"
@@ -115,7 +115,7 @@ export default function Home() {
                     href={`/${i.link}`}
                   >
                     <button
-                      className=" bg-[#e276aa] flex justify-center items-center text-white text-sm sm:text-xl font-serif font-semibold px-3 sm:px-6 py-1 sm:py-2 rounded-lg shadow-lg hover:scale-105 my-3 transition duration-[2000ms] mx-auto"
+                      className=" bg-[#e276aa] text-white text-sm sm:text-xl font-serif font-semibold px-3 sm:px-6 py-1 sm:py-2 rounded-lg shadow-lg hover:scale-105 my-3 transition duration-[2000ms] mx-auto cursor-pointer"
                     >Подробно
                     </button>
                   </Link>

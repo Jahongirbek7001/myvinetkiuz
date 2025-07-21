@@ -1,13 +1,11 @@
-import firstMlImg from "@/public/media/schoolAlbom/mladshiy6.jpg"
-import secondMlImg from "@/public/media/schoolAlbom/mladshiy2.jpg"
-import thirdMlImg from "@/public/media/schoolAlbom/mladshiy8.jpg"
-import fourthMlImg from "@/public/media/schoolAlbom/mladshiy9.jpg"
-import fivethMlImg from "@/public/media/schoolAlbom/mladshiy7.jpg"
+import firstMlImg from "@/public/media/st-shkola/ml-shkola-1.jpg"
+import secondMlImg from "@/public/media/st-shkola/ml-shkola-2.jpg"
+import thirdMlImg from "@/public/media/st-shkola/ml-shkola-3.jpg"
+import fourthMlImg from "@/public/media/st-shkola/ml-shkola-4.jpg"
+import fivethMlImg from "@/public/media/st-shkola/ml-shkola-5.jpg"
 import Mladshiycard from "../../components/mladshiyCard";
 
 import React from 'react'
-import Image from "next/image";
-import Link from "next/link"
 import AlbumCard from "@/components/AlbumCard"
 import AlbumCardMobile from "@/components/AlbumCardMobile"
 

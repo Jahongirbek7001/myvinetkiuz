@@ -42,7 +42,7 @@ export default function AlbumCard({ item }: AlbumCardProps) {
                         <Image
                             src={item.image}
                             alt=""
-                            className="object-center object-cover w-full h-full scale-150 translate-y-20"
+                            className="object-center object-cover w-full h-full"
                             fill
                         />
                         <div className="w-full absolute bottom-5 flex justify-center items-center gap-5">
@@ -61,8 +61,8 @@ export default function AlbumCard({ item }: AlbumCardProps) {
                         <Image
                             src={item.image}
                             alt=""
-                            className="object-center object-cover w-full h-full scale-150 translate-y-20"
-                            fill
+                            className="object-center object-cover h-full"
+                            
                         />
                         <div className="w-full absolute bottom-5 flex justify-center items-center gap-5">
                             <Link href="/#form">

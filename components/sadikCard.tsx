@@ -10,7 +10,7 @@ import Image from "next/image"
 function SadikCard() {
   return (
     <>
-      <div className=" w-full grid grid-cols-3 gap-5 p-5 lg:p-20 sixCard">
+      <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 lg:p-20">
         <div>
           <Image src={studio1} alt="" />
         </div>

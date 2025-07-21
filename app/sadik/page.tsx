@@ -1,8 +1,8 @@
-import firstSadikImg from "@/public/media/schoolAlbom/sadik3.jpg"
-import secondSadikImg from "@/public/media/schoolAlbom/sadik7.jpg"
-import thirdSadikImg from "@/public/media/schoolAlbom/sadik0013.jpg"
-import fourthSadikImg from "@/public/media/schoolAlbom/sadik289.jpg"
-import fivethSadikImg from "@/public/media/schoolAlbom/sadikMM.jpg"
+import firstSadikImg from "@/public/media/st-shkola/sadik-1.jpg"
+import secondSadikImg from "@/public/media/st-shkola/sadik-2.jpg"
+import thirdSadikImg from "@/public/media/st-shkola/sadik-3.jpg"
+import fourthSadikImg from "@/public/media/st-shkola/sadik-4.jpg"
+import fivethSadikImg from "@/public/media/st-shkola/sadik-5.jpg"
 import SadikCard from "../../components/sadikCard";
 
 import React from 'react'

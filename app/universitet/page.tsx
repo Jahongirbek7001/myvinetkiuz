@@ -1,12 +1,12 @@
 'use client'
 
-import firstUnImg from "@/public/media/univerAlbom/3.jpg"
-import secondUnImg from "@/public/media/univerAlbom/4.jpg"
-import thirdUnImg from "@/public/media/univerAlbom/00.jpg"
-import fourthUnImg from "@/public/media/univerAlbom/2023.jpg"
-import fivethUnImg from "@/public/media/univerAlbom/02.jpg"
-import sixthUnImg from "@/public/media/univerAlbom/4837.jpg"
-import seventhUnImg from "@/public/media/univerAlbom/60x20.jpg"
+import firstUnImg from "@/public/media/univer/univer-1.jpg"
+import secondUnImg from "@/public/media/univer/univer-2.jpg"
+import thirdUnImg from "@/public/media/univer/univer-3.jpg"
+import fourthUnImg from "@/public/media/univer/univer-4.jpg"
+import fivethUnImg from "@/public/media/univer/univer-5.jpg"
+import sixthUnImg from "@/public/media/univer/univer-6.jpg"
+// import seventhUnImg from "@/public/media/univer/univer-60x20.jpg"
 import UniverCard from "../../components/univerCard";
 import React from 'react'
 import AlbumCard from '@/components/AlbumCard'
@@ -21,7 +21,7 @@ const Universitet = () => {
     { id: 4, image: fourthUnImg, type: "Тип Виньетки: ROYAL Premium", page: "Размер: 20x30", cover: "Тип обложки:Фактурный 3D Печать", blok: "Тип печати: Журнальный", photoshoot: "Фотосессия:1.Фотостудия 2.ВУЗ 3. Прогулка по выбору клиента в городе.", bonus: "Бонус: Мантия магистра и подарки", term: "Срок: От 60 до 90 рабочих дней от потока заказа" },
     { id: 5, image: fivethUnImg, type: "Тип Виньетки: Хард Ковер Классик А4", page: "Размер: 20x30", cover: "Тип обложки:Софт-тач твёрдый пр.", blok: "Тип печати: Химичиская лабараторная печать с пластикавами страницами количество страниц (10)", photoshoot: "Фотосессия: 1.Фотостудия 2.ВУЗ", bonus: "Бонус: Мантия магистра и подарки", term: "Срок: От 60 до 90 рабочих дней от потока заказа" },
     { id: 6, image: sixthUnImg, type: "Тип Виньетки: Стандарт", page: "Размер: 20x30. Страницы: 10", cover: "Тип обложки:Стеклянная", blok: "Тип печати: Лабораторная печать из пластиков", photoshoot: "Фотосессия: 1.Фотостудия 2.ВУЗ", bonus: "Бонус: Мантия магистра и подарки", term: "Срок: От 60 до 90 рабочих дней от потока заказа" },
-    { id: 7, image: seventhUnImg, type: "Тип Виньетки: Элегант", page: "Размер: 20x30", cover: "Тип обложки: Бархат с гравировкой и треугольный стекло. Тип печати:  Лабораторная печать из пластиков", blok: "Страницы: 20-30 от кол-во студентов", photoshoot: "Фотосессия: 1.Фотостудия 2.ВУЗ", bonus: "Бонус: Мантия магистра и подарки", term: "Срок: От 60 до 90 рабочих дней от потока заказа" },
+    // { id: 7, image: seventhUnImg, type: "Тип Виньетки: Элегант", page: "Размер: 20x30", cover: "Тип обложки: Бархат с гравировкой и треугольный стекло. Тип печати:  Лабораторная печать из пластиков", blok: "Страницы: 20-30 от кол-во студентов", photoshoot: "Фотосессия: 1.Фотостудия 2.ВУЗ", bonus: "Бонус: Мантия магистра и подарки", term: "Срок: От 60 до 90 рабочих дней от потока заказа" },
   ]
 
   return (
